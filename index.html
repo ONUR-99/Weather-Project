@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- karakter kodlamasını belirtir -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> chrome FRAME EKLER 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> HARİTA SAYFAYA GÖRE AYARLAR 
+    <!-- sayfanın başlığı -->
+    <title>HAVA DURUMU</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <!-- https://cdnjs.com/libraries/font-awesome bu linkten font-awesome kütüphanesi eklendi ve siteden istediğim ikonu almama yardımcı oldu-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--css tanımlama-->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header id="Ana Sayfa" class="main-header">
+      <div class="navbar">
+        <h1 class="logo">
+          <!--ikon ekleme-->
+          <i class="fa-solid fa-cloud-sun"></i>
+
+          <span>Hava</span> Durumu
+        </h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="https://openweathermap.org/guide">Open Weather</a></li>
+          </ul>
+        </nav>
+      </div>
+      <br />
+      <div class="content">
+        <h1>Türkiye Hava Durumu Haritası</h1>
+        <a href="https://openweathermap.org/" class="btn btn-primary">
+          <i class="fas fa-chevron-right"></i>
+          read more
+        </a>
+        <!--haritayı tanımlama-->
+        <div id="map" class="map"></div>
+      </div>
+    </header>
+    <!--javascript tanımlama tanımlama-->
+    <script src="script.js"></script>
+  </body>
+</html>

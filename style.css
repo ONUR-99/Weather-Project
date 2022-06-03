@@ -1,0 +1,100 @@
+/* google-font */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap");
+
+/* içerisine yazılan herşeyi css deki her öğe için geçerli   */
+* {
+  box-sizing: border-box; /*kenarlık kutusu genişlik ve yükseklik belirtilen ayara göre alınır tüm sayfada*/
+  padding: 0;
+  margin: 0; /*her zaman varsayılan bir kenar boşluğu gelir otomatik kaldırmak için */
+}
+html {
+  font-size: 10px; /*yazı tipinin boyutunu ayarlar*/
+}
+body {
+  font-family: "Open Sans", sans-serif; /*body içerisinde yazı tipi */
+  font-size: 16px; /*body içerisinde yazı tipi boyutu */
+}
+
+ul {
+  list-style: none; /*liste stili yok anasayfa ve openweather*/
+}
+
+a {
+  color: rgb(0, 0, 0); /*link tıklayınca da siyah olsun */
+  text-decoration: none; /*link e özellik ekleme alt çizgi vs */
+}
+
+h1,
+h2 {
+  font-weight: 300; /*yazı kalınlığı THDH*/
+  line-height: 1.2; /*yazı yüksekliği*/
+}
+
+/* NAVBAR */
+
+.navbar {
+  display: flex; /**/
+  align-items: center; /*dikeyde ortala */
+  justify-content: space-between; /*yatayda arasında boşluk*/
+  background-color: #aaa492; /*zemine renk vermek */
+  opacity: 1; /*opaklık yani zemini gösterir*/
+  color: #ffffff; /*yazılar rengi*/
+  position: fixed; /*içerik kadar yer kaplamasını sağlattık bunu yazdığımda genişlik değeri sıfırlanıyor yeniden tanımlama yaptık*/
+  top: 0; /*konumu üstten sıfır*/
+  width: 100%; /*genişlik*/
+  height: 70px; /*yükseklik*/
+  padding: 0 30px; /*üstten alttan sıfır, sağdan soldan 30px */
+}
+
+.navbar a {
+  color: rgb(0, 0, 0); /*a etiketlerine renk vermek */
+  padding: 10px 20px;
+  margin: 0 5px;
+}
+
+.navbar a:hover {
+  border-bottom: 2px solid rgb(0, 0, 0); /*alt çizgi*/
+}
+
+.navbar ul {
+  display: flex; /*ul etiketlerini yan yana getirdik*/
+}
+
+.navbar .logo {
+  font-weight: 400; /*logo içerisinde olan hava durumu başığının yazı puntosu */
+}
+
+.navbar h1 {
+  font-size: 30px; /*h1 içindeki yazı büyüklüğü*/
+}
+
+.navbar span {
+  color: rgb(0, 0, 0); /*span etiketi içindeki yazıyı değiştirir*/
+}
+
+/*HEADER*/
+
+.main-header {
+  height: 100vh; /*uydur sayfaya */
+  color: rgb(0, 0, 0); /*yazı rengi */
+}
+
+.main-header .content {
+  display: flex;
+  flex-direction: column; /*hizalama alt alta THDH için*/
+  align-items: center; /*dikeyde ortala*/
+  justify-content: center; /*yatayda ortala*/
+  text-align: center; /*kendi aralarında ortala*/
+  height: 100%; /*yükseklik verdik */
+}
+
+.main-header .map {
+  height: 400px; /*harita yükseklik ve genişlik */
+  width: 700px;
+  border: 5px solid #aaa492; /*kenarlık genişliği ve rengi */
+  margin: center; /*öğenin dört tarafından da boşluk ayarlar  */
+}
+
+.main-header h1 {
+  font-size: 25px; /*yazı büyüklüğü*/
+}
